@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-
+#import "VXBinaryTreeTool.h"
 @interface ViewController ()
 
 @end
@@ -16,9 +16,21 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    [self treeOperate];
 }
 
+- (void)treeOperate {
+    NSArray *values = @[@2,@3,@1,@11,@8,@19,@4,@5,@9,@20,@15];
+    VXBinaryTreeNode *treeNode = [VXBinaryTreeTool createBinaryTreeWithArrays:values];
+    //前序遍历
+    NSMutableArray *arr = [[NSMutableArray alloc] init];
+    [VXBinaryTreeTool presentOrderReadTree:treeNode handler:^(VXBinaryTreeNode *treeNode) {
+        [arr addObject:@(treeNode.value)];
+    }];
+    for (id value in arr) {
+        NSLog(@"遍历:%ld",[value integerValue]);
+    }
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

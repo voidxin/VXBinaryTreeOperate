@@ -13,6 +13,8 @@
 		57EBBD8E1E4D6A4900753148 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57EBBD8C1E4D6A4900753148 /* Main.storyboard */; };
 		57EBBD901E4D6A4900753148 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57EBBD8F1E4D6A4900753148 /* Assets.xcassets */; };
 		57EBBD931E4D6A4900753148 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57EBBD911E4D6A4900753148 /* LaunchScreen.storyboard */; };
+		57EBBD9D1E4D6A8700753148 /* VXBinaryTreeNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 57EBBD9C1E4D6A8700753148 /* VXBinaryTreeNode.m */; };
+		57EBBDA01E4D824300753148 /* VXBinaryTreeTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 57EBBD9F1E4D824300753148 /* VXBinaryTreeTool.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,10 @@
 		57EBBD8F1E4D6A4900753148 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		57EBBD921E4D6A4900753148 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		57EBBD941E4D6A4900753148 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		57EBBD9B1E4D6A8700753148 /* VXBinaryTreeNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VXBinaryTreeNode.h; sourceTree = "<group>"; };
+		57EBBD9C1E4D6A8700753148 /* VXBinaryTreeNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VXBinaryTreeNode.m; sourceTree = "<group>"; };
+		57EBBD9E1E4D824300753148 /* VXBinaryTreeTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VXBinaryTreeTool.h; sourceTree = "<group>"; };
+		57EBBD9F1E4D824300753148 /* VXBinaryTreeTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VXBinaryTreeTool.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +68,9 @@
 				57EBBD871E4D6A4900753148 /* AppDelegate.m */,
 				57EBBD891E4D6A4900753148 /* ViewController.h */,
 				57EBBD8A1E4D6A4900753148 /* ViewController.m */,
+				57EBBD9E1E4D824300753148 /* VXBinaryTreeTool.h */,
+				57EBBD9F1E4D824300753148 /* VXBinaryTreeTool.m */,
+				57EBBD9A1E4D6A7600753148 /* Model */,
 				57EBBD8C1E4D6A4900753148 /* Main.storyboard */,
 				57EBBD8F1E4D6A4900753148 /* Assets.xcassets */,
 				57EBBD911E4D6A4900753148 /* LaunchScreen.storyboard */,
@@ -77,6 +86,15 @@
 				57EBBD841E4D6A4900753148 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		57EBBD9A1E4D6A7600753148 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				57EBBD9B1E4D6A8700753148 /* VXBinaryTreeNode.h */,
+				57EBBD9C1E4D6A8700753148 /* VXBinaryTreeNode.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,6 +171,8 @@
 			files = (
 				57EBBD8B1E4D6A4900753148 /* ViewController.m in Sources */,
 				57EBBD881E4D6A4900753148 /* AppDelegate.m in Sources */,
+				57EBBDA01E4D824300753148 /* VXBinaryTreeTool.m in Sources */,
+				57EBBD9D1E4D6A8700753148 /* VXBinaryTreeNode.m in Sources */,
 				57EBBD851E4D6A4900753148 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
